@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - RAJESH S</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="hero-header" id="home">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">RAJESH S</div>
+                </div>
+
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="1781852639142.jpg" alt="profile pic">
+                </div>
+
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Full Stack Web Developer</span></h5>
+                    <h1>RAJESH S</h1>
+                    <p>
+                        Passionate Full Stack Web Developer skilled in HTML, CSS, JavaScript, React.js, Node.js, and Express.js.
+                        Dedicated to building scalable web applications, solving complex problems, and creating seamless user experiences through clean and efficient code.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="Rajesh_Resume.pdf" download="Rajesh_Resume.pdf" class="btn active">Download Resume</a>
+                        <a href="#projects" class="btn">View Projects</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://github.com/RAJESH07062006" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rajesh-s-44b816330" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rajxxh_06?igsh=MW1vaW5lOHR4eHpmaQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="section about-section">
+        <div class="section-content about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm <strong>Rajesh S</strong>, a passionate Java Full Stack Developer with skills in Java, Spring Boot,
+                    React.js, HTML, CSS, JavaScript, MySQL, and modern web technologies. I enjoy building responsive websites,
+                    scalable applications, and solving coding problems with clean and efficient solutions.
+                </p>
+            </div>
+            <div class="about-photo-wrapper">
+                <img src="1781852639142.jpg" alt="About Profile Image" class="about-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="section-content">
+            <h2>My Skills</h2>
+
+            <div class="skills-box">
+                <h3>TOOLS & TECHNOLOGIES:</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                    <span class="skill-badge"><i class="fa-brands fa-js"></i> JS</span>
+                    <span class="skill-badge"><i class="fa-brands fa-react"></i> REACT.JS</span>
+                    <span class="skill-badge"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+                    <span class="skill-badge"><i class="fa-brands fa-java"></i> JAVA</span>
+                    <span class="skill-badge"><i class="fa-brands fa-node-js"></i> NODE.JS</span>
+                    <span class="skill-badge"><i class="fa-solid fa-server"></i> EXPRESS.JS</span>
+                    <span class="skill-badge"><i class="fa-solid fa-database"></i> MONGO DB</span>
+                    <span class="skill-badge"><i class="fa-brands fa-github"></i> GIT & GITHUB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="section-content">
+            <h2>Projects</h2>
+            
+            <div class="project-card" onclick="window.open('https://github.com/RAJESH07062006/SMALL-MINI-PROJECTS-USING-HTML-CSS-AND-JS-QUIZ-PROJECTS-', '_blank')">
+                <h3>Quiz Application <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:14px; margin-left:5px; color:#007ced;"></i></h3>
+                <p>Developed an interactive quiz application with score calculation and responsive design. Implemented dynamic question handling and instant result display.</p>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/RAJESH07062006/Random-Password-Generator-WEB-CONCEPTS-', '_blank')">
+                <h3>Random Password Generator <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:14px; margin-left:5px; color:#007ced;"></i></h3>
+                <p>Built a secure password generator with customizable password options. Improved password security using JavaScript-based random generation logic.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            
+            <div class="contact-details">
+                <p><strong>Mobile:</strong> +91 8122275522</p>
+                <p><strong>Email:</strong> ownvoiceofraju@gmail.com</p>
+            </div>
+
+            <form id="contactForm" onsubmit="executeFormSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="userName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="userEmail" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="userMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.umd.js"></script>
+
+    <script>
+        // MOBILE Hamburger MENU INTERACTION
+        const togglebtn = document.querySelector(".togglebtn");
+        const navlinks = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            navlinks.classList.toggle("open");
+        });
+
+        // Autoclose menu overlay upon click option selections
+        document.querySelectorAll(".navlinks a").forEach(anchor => {
+            anchor.addEventListener("click", () => {
+                navlinks.classList.remove("open");
+                togglebtn.classList.remove("click");
+            });
+        });
+
+        // TYPED JS ENGINE RUNNER
+        var typed = new Typed(".input", {
+            strings: ["Full Stack Developer", "Java Developer", "Web Developer"],
+            typeSpeed: 50,
+            backSpeed: 45,
+            loop: true
+        });
+
+        // JAVASCRIPT CONTACT FORM VALIDATION ENGINE
+        function executeFormSubmit(event) {
+            event.preventDefault(); 
+            
+            const nameValue = document.getElementById("userName").value;
+            const emailValue = document.getElementById("userEmail").value;
+            const msgValue = document.getElementById("userMessage").value;
+
+            if(nameValue.trim() === "" || emailValue.trim() === "" || msgValue.trim() === "") {
+                alert("Please fill out all mandatory contact fields before submission.");
+                return false;
+            }
+
+            alert(`Hello ${nameValue}, your contact query statement has been validated successfully! Rajesh S will get back to you at ${emailValue}.`);
+            
+            // Clear message form post capture execution
+            document.getElementById("contactForm").reset();
+            return true;
+        }
+    </script>
+
+</body>
+</html>
