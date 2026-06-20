@@ -397,54 +397,79 @@ nav .navlinks li a:hover {
 }
 
 /* MOBILE MEDIA QUERY RESPONSIVENESS */
+/* ==========================================================================
+   UPDATED MOBILE MEDIA QUERY RESPONSIVENESS
+   ========================================================================== */
+
 @media (max-width: 930px) {
-    nav .togglebtn {
-        display: initial;
+    /* Ensure header wrapper doesn't break alignment */
+    header {
+        position: relative;
+        padding: 25px 0;
     }
 
+    /* Turn on hamburger button */
+    nav .togglebtn {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 10;
+    }
+
+    /* Hamburger Animation Transitions */
     .click span {
         position: absolute;
-        margin-top: 12px;
     }
 
     .click span:first-child {
         transform: rotate(-45deg);
+        top: 12px;
     }
 
     .click span:nth-child(2) {
         opacity: 0;
-        margin: 0;
     }
 
     .click span:last-child {
         transform: rotate(45deg);
-        top: 0;
+        top: 12px;
     }
 
+    /* Hidden Drawer Menu State */
     nav .navlinks {
-        position: absolute;
-        top: 110px;
+        position: fixed; /* Changed to fixed so it covers full view height dynamically */
+        top: 0;
         right: -100%;
-        width: 60%;
+        width: 70%;
         height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
-        transition: 0.5s;
-        padding: 25px 0;
+        background-color: #1a1a1a; /* Matches darker panels */
+        z-index: 9;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        transition: right 0.4s ease-in-out;
+        padding: 100px 0 25px 0; /* Keeps breathing room at top for close button */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav .navlinks li {
         display: block;
+        width: 100%;
+        text-align: center;
     }
 
     nav .navlinks li a {
         display: block;
-        margin-bottom: 15px;
-        text-align: center;
-        margin-left: 0;
+        padding: 15px 0;
+        margin: 10px 0;
+        font-size: 20px;
+        color: #fff;
+        width: 100%;
     }
 
+    /* Revealed Drawer Menu State */
     nav .navlinks.open {
         right: 0;
     }
@@ -479,8 +504,7 @@ nav .navlinks li a:hover {
         font-size: 32px;
     }
 
-    .section p,
-    .skills-box ol {
+    .section p {
         font-size: 16px;
     }
 }
